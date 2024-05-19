@@ -1,22 +1,22 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
 def home (request):
-    return HttpResponse ('home')
+    return render (request, 'portafolioDoc/home.html')
 
 def educacion (request):
-    return HttpResponse ('educacion')
+    return render (request, 'portafolioDoc/educacion.html')
 
 
 def experiencia (request):
-    return HttpResponse ('experiencia')
+    return render (request, 'portafolioDoc/experiencia.html')
 
 def proyectos (request):
-    return HttpResponse ('proyecto')
+    return render (request, 'portafolioDoc/proyectos.html')
 
 def extracurricular (request):
-    return HttpResponse ('extracurricular')
+    return render (request, 'portafolioDoc/extracurricular.html')
 
 def contacto (request):
-    return HttpResponse ('contacto')
+    return render (request, 'portafolioDoc/contacto.html')
