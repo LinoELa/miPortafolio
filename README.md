@@ -31,3 +31,28 @@ Para organizar las URLs para que cuendo tengamos otros proyectos podamos organiz
     - ya no queremos que hagan un httpresponse donde solo nos envia texto
 
 # parte 3
+Bootstrap and Css
+
+- Creamos la carpeta static 
+    - Dentro creamos la carpeta css    
+        - le podemos poner el nombre de la app
+            - blog o portafolio .css
+
+    - Vincular  Bootstrap  al home.html
+
+    - Vincular style con la plantilla home.html
+
+
+- EDITAR EL HTML o Navbar Principal
+    - Empezamos con solo haciendo el navbar
+
+    - las imagenes como son algo como estetaicas pues de pone directamente dentro de una carpeta llamada como sea dentro del static 
+    
+- Aveces para que las imagenes se cargen es mejoro hacer un coleectic de ellos,  puedo usar algo como 
+    - python manage.py collectstatic
+
+- Si no se carga las fotos puedo intentar abrir la pagian en el archivo en modo incognito. 
+
+
+
+
