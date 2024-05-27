@@ -55,3 +55,11 @@ Bootstrap and Css
 
 
 
+- - PRIMERO EN BOOTRASP : 
+    - Hacer el navbar 
+    - seccion 1 
+    - seccion 2 
+    - seccion 3 
+
+
+
