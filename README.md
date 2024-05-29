@@ -1,19 +1,16 @@
 # miPortafolio
 
 Voy a invertir 48h en este proyecto
-- Dia 1 
-    8h
-- Dia 2 
-- Dia 3
 
-## Informacion adicional 
+
+### Informacion adicional 
 - Voy a crear un blog  dentro de portafolio para poder ir subiendo partes de los proyecto que voy haciendo. 
 - 
 
-## parte 1 
+## Parte I
 Creamos las vistas del navbar
 
-## parte 2 
+## Parte II 
 Para organizar las URLs para que cuendo tengamos otros proyectos podamos organizar mejor las url
 - Usaremos 
     - - include en el path pricipal que apunte a la urls que hemos creado
@@ -30,7 +27,7 @@ Para organizar las URLs para que cuendo tengamos otros proyectos podamos organiz
 - Hacer que las vistas renderizen las plantillas html creadas 
     - ya no queremos que hagan un httpresponse donde solo nos envia texto
 
-# parte 3
+# parte III
 Bootstrap and Css
 
 - Creamos la carpeta static 
@@ -60,6 +57,69 @@ Bootstrap and Css
     - seccion 1 
     - seccion 2 
     - seccion 3 
+
+
+# Parte IV 
+- Formato del sitio con Bootstrap 
+Vincular el sitio Web a la plantilla de bootstrap 
+
+
+# Parte V
+
+- Creacion de plantillas (Templates)
+- Herencia de plantillas  y estructura de sitios.
+
+
+
+#### Creacion de Plantillas (Templates)
+- La mejor forma es coger partes de plantillas de boostrap y ponerse hacer que se vean 
+
+### Herencia de plantillas 
+- Para que herenden las plantillas hijos (plantillas normales ) hay que crear la plantilla padre (Base.html)
+    - la mejor forma es copiar la plantilla home que pegarla cambiar el nombre a base.html
+
+- Luego crear en blog content dentro de la plantilla padre  (base.html)
+    > {% block content %} (1)
+    > {% endblock %} (1)
+
+- Luego extender  la pantilla padre dentro en las pantilas hijas (home.html) 
+    >{% extends 'nombredeApp/base.html' %} (2)
+
+- luego cargar  la plantilla base.html 
+    > {% load static%} (3)
+
+
+- Luego creamos un block content en base.html y todo el contendo del Navbar & Footer tienen que ir dentro 
+    > {% block content %} (4)
+    > {% endblock %} (4)
+
+
+- **Al base.html seria**
+
+    > {% load static%}  (3)
+
+    -- Start intro & navbar --
+    -- End intro & navbar -- 
+
+
+    >{% block content %} (4)
+    {% endblock %} (  4)
+
+     --- start Footer ---  
+     --- end Footer ---  
+
+
+
+- **Al home.html  & otras seria**
+
+    > {% extend 'nombre_Carpeta_en_templates/base.html' %} (2)
+
+    >{% load static%}  (3)
+
+    >{% block content %} (1)
+    {% endblock %} (1)
+
+
 
 
 
