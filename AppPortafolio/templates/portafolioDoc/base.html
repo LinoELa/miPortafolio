@@ -27,7 +27,7 @@
         rel="stylesheet" />
 
     {% comment %} titulo {% endcomment %}
-    <title>Home</title>
+    <title>Ela Lino</title>
 
     {% comment %} Vincular Styles de Css {% endcomment %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
@@ -35,16 +35,17 @@
 
 </head>
 
-<body class='d-flex flex-column h-100'>
-{% comment %} START NAVBAR  {% endcomment %}
+<body class='d-flex flex-column'>
+    {% comment %} START NAVBAR {% endcomment %}
 
 
     <main class="flex-shrink-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white py-3 fixed-top">
             <div class="container px-5">
                 <a href="" class="navbar-brand">
                     <span class="fw-bolder text-primary">
-                        <img src="{% static 'images/img3.svg' %}" alt="Imagen" width="50" height="50" class="fw-bolder text-primary">
+                        <img src="{% static 'images/img3.svg' %}" alt="Imagen" width="50" height="50"
+                            class="fw-bolder text-primary">
                     </span>
                 </a>
 
@@ -56,15 +57,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bolder fs-5">
 
-                        <li class="nav-item"><a class="nav-link custom-text custom-text-hover  rounded-1"
+                        <li class="nav-item"><a class="nav-link text-white custom-text-hover  rounded-1"
                                 target="_blank" href="educacion">Educacion</a></li>
-                        <li class="nav-item"><a class="nav-link custom-text custom-text-hover  rounded-1"
+                        <li class="nav-item"><a class="nav-link text-white custom-text-hover  rounded-1"
                                 target="_blank" href="experiencia">Experiencia</a></li>
-                        <li class="nav-item"><a class="nav-link custom-text custom-text-hover  rounded-1"
+                        <li class="nav-item"><a class="nav-link text-white custom-text-hover  rounded-1"
                                 target="_blank" href="proyectos">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link custom-text custom-text-hover  rounded-1"
+                        <li class="nav-item"><a class="nav-link text-white custom-text-hover  rounded-1"
                                 target="_blank" href="extracurricular">Extracuricular</a></li>
-                        <li class="nav-item"><a class="nav-link custom-text custom-text-hover  rounded-1"
+                        <li class="nav-item"><a class="nav-link text-white custom-text-hover  rounded-1"
                                 target="_blank" href="contacto">Contacto</a></li>
                     </ul>
                 </div>
@@ -73,17 +74,53 @@
         </nav>
     </main>
 
-{% comment %} END INTRO & NAVBAR {% endcomment %}
+    {% comment %} END INTRO & NAVBAR {% endcomment %}
 
 
     {% block content%}
 
     {% endblock%}
 
-{% comment %} START FOOTER {% endcomment %}
+    {% comment %} START FOOTER {% endcomment %}
 
 
-{% comment %} END FOOTER  {% endcomment %}
+
+
+    <div class="container">
+
+        <footer>
+
+            <div class='d-flex flex-wrap justify-content-center  py-3 my-4'>
+                <a href="/"
+                    class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-body-secondary text-decoration-none lh-1">
+                    {% comment %} <img class="bi fw-bolder text-primary mx-4" src="{% static 'images/up.png' %}" alt="Imagen"
+                        width="50" height="50"> {% endcomment %}
+                    <span class="fw-bold fs-6 mb-3 mb-md-0 text-body-secondary ">Ela - Software
+                        Developer</span>
+                </a>
+
+                <ul class="nav px-5">
+                    <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/lino-ela/"><img
+                                src="{% static 'images/linkedin.png' %}" alt="linkedin" width="40" height="40"
+                                class="bi fw-bolder text-primary"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://github.com/LinoELa"><img
+                                src="{% static 'images/github.png' %}" alt="linkedin" width="40" height="40"
+                                class="bi fw-bolder text-primary"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary"
+                            href="mailto:jamelarry22@gmail.com?Subject=Visto%20desde%20tu%20portafolio%20cv"><img
+                                src="{% static 'images/gmail.png' %}" alt="gmail" width="40" height="40"
+                                class="bi fw-bolder text-primary"></a></li>
+                </ul>
+            </div>
+
+            <div class='d-flex flex-wrap py-4 justify-content-around border-top'>
+                <p> <span class='fw-bold' style='color= black '> &copy; 2024 Todos los derechos reservados </span></p>
+                <p> <span class='fw-bold text-body-secondary'>Diseñado y desarrollado por Paulino S. Ela </span> </p>
+            </div>
+        </footer>
+    </div>
+
+    {% comment %} END FOOTER {% endcomment %}
 
 
 

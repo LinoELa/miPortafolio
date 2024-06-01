@@ -64,7 +64,7 @@ Bootstrap and Css
 Vincular el sitio Web a la plantilla de bootstrap 
 
 
-# Parte V
+# Parte V_
 
 - Creacion de plantillas (Templates)
 - Herencia de plantillas  y estructura de sitios.
@@ -121,5 +121,6 @@ Vincular el sitio Web a la plantilla de bootstrap
 
 
 
-
+# Parte VI
+- Completar las demas paginas o plantillas con la herencias de navbar  el footer
 

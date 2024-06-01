@@ -1,43 +1,78 @@
-
 {% extends 'portafolioDoc/base.html'%}
+
 {% load static %}
 
-{% comment %}  {% endcomment %}
+{% comment %} {% endcomment %}
 
 {% block content %}
-    <!-- Header-->
-    <header class="py-5">
-        <div class="container px-5 pb-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-xxl-5">
-                    <!-- Header text content-->
-                    <div class="text-center text-xxl-start">
-                        <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                            <div class="text-uppercase">Design &middot; Development &middot; Marketing</div>
-                        </div>
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Hola , soy lino Ela
-                                <div class="fs-3 fw-light text-muted">I can help your business to</div>
-                                grow fast</span></h1>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
-                                href="resume.html">Resume</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-                                href="projects.html">Projects</a>
-                        </div>
+<!-- Header-->
+
+<header class="py-5">
+    <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-xxl-5">
+                <!-- Header text content-->
+                <div class="text-center text-xxl-start mb-3">
+
+                    <h1 class="featurette-heading  lh-1 fw-bold fs-1 mb-3  py-3">Hola, Soy Paulino S. Ela <br> <span
+                            class="text-body-secondary fs-4 mt-0 pb-5">Software Developer</span></h1>
+
+                    <h2 class="display-3 fw-bolder mb-5">
+                        <span class="text-gradient d-inline">
+                            <div class="fs-5 fw-light text-muted" style="color: black;">¡Bienvenido a mi mundo digital!
+                                <br> Soy un desarrollador de
+                                software
+                                apasionado por la tecnología , la creación de soluciones innovadoras y con un profundo
+                                amor del
+                                impacto del software en nuestras vidas.
+                            </div>
+                        </span>
+                    </h2>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                        <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                            href="https://www.linkedin.com/in/lino-ela/" target="_blank">LinkedIn</a>
+                        <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                            href="https://github.com/LinoELa" target="_blank">Github</a>
                     </div>
                 </div>
-                <div class="col-xxl-7">
-                    <!-- Header profile picture-->
-                    <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                        <div class="profile bg-gradient-primary-to-secondary">
-                            <img class="profile-img img-fluid" src="{% static "images/img2.jpeg" %}" alt="" />
-                        </div>
+            </div>
+            <div class="col-xxl-7">
+                <!-- Header profile picture-->
+                <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                    <div class="profile bg-gradient-primary-to-secondary">
+                        <img class="profile-img img-fluid"  src="{% static 'Images/img2.jpeg' %}"  alt="" />
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+</header>
+
+
+{% comment %} ----------------------------------------------------------------- {% endcomment %}
+
+
+<div class="b-example-divider"></div>
+
+<div class="bg-light text-secondary px-4 py-5 text-center">
+  <div class="py-5">
+    <h1 class="display-5 fw-bold text-dark">Portafolio en PDF</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn bg-dark text-white btn-lg px-4 me-sm-3 fw-bold">Descargar CV</button>
+        <button type="button" class="btn bg-dark text-white btn-lg px-4 fw-bold ">Download CV</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="b-example-divider mb-0"></div>
+
+
+
+{% comment %} ----------------------------------------------------------------- {% endcomment %}
+
+
+
 
 {% endblock %}
-
-
-
