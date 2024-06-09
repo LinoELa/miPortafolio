@@ -123,3 +123,12 @@ body {
 
 
 /* ------------------------- END SECCION 1 : HERO  --------------------- */
+
+.progress {
+  width: 80%; /* Ajusta el ancho de la barra de progreso */
+  height: 40px; /* Ajusta la altura de la barra de progreso */
+  margin: 20px auto; /* Centra la barra de progreso horizontalmente */
+}
+.progress-bar {
+  height: 100%; /* Asegura que la barra de progreso ocupe toda la altura del contenedor */
+}
