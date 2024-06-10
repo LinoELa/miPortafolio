@@ -124,3 +124,6 @@ Vincular el sitio Web a la plantilla de bootstrap
 # Parte VI
 - Completar las demas paginas o plantillas con la herencias de navbar  el footer
 
+
+# SECCION 4 - 5
+
