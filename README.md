@@ -124,3 +124,35 @@ Vincular el sitio Web a la plantilla de bootstrap
 # Parte VI
 - Completar las demas paginas o plantillas con la herencias de navbar  el footer
 
+
+
+# Informacion Extra 
+Grid : 
+- Col-sm 
+- Col-md
+- Col-lg
+https://getbootstrap.com/docs/4.0/layout/grid/
+
+La clase `container col-xl-10 col-xxl-8 px-4 py-5` es una combinación de clases de Bootstrap, un popular framework de desarrollo de front-end que facilita la creación de diseños responsivos y móviles primero. Cada una de estas clases tiene un propósito específico:
+
+1. **`container`**: Esta clase establece un contenedor centrado y con padding horizontal en el diseño. Los contenedores son los bloques básicos de un diseño de Bootstrap y se utilizan para contener, rellenar y alinear el contenido dentro de una página web.
+
+2. **`col-xl-10`**: Esta clase define una columna que ocupa 10 de las 12 partes disponibles en el sistema de rejilla de Bootstrap cuando la pantalla es extra large (≥1200px). Esto significa que la columna ocupará aproximadamente el 83.33% del ancho del contenedor en pantallas extra grandes.
+
+3. **`col-xxl-8`**: Similar a la anterior, esta clase define una columna que ocupa 8 de las 12 partes disponibles en el sistema de rejilla de Bootstrap cuando la pantalla es extra extra large (≥1400px). En este caso, la columna ocupará aproximadamente el 66.67% del ancho del contenedor en pantallas extra extra grandes.
+
+4. **`px-4`**: Esta clase aplica un padding horizontal (izquierda y derecha) de `1.5rem` al elemento. La "p" significa "padding" y la "x" indica que se aplica tanto a los lados izquierdo como derecho. El número "4" es un multiplicador de la unidad de espacio base de Bootstrap.
+
+5. **`py-5`**: Similar a la anterior, esta clase aplica un padding vertical (arriba y abajo) de `3rem` al elemento. La "p" significa "padding" y la "y" indica que se aplica tanto a la parte superior como inferior. El número "5" es un multiplicador de la unidad de espacio base de Bootstrap.
+
+
+6. **`g-lg-5`**  es una clase de Bootstrap que define la cantidad de espacio (gutter) entre las columnas en un contenedor de rejilla para pantallas de tamaño grande (≥992px). Aquí está la descomposición de la clase:
+
+- **`g`**: Indica que se está definiendo el gutter, es decir, el espacio entre las columnas en el sistema de rejilla de Bootstrap.
+- **`lg`**: Significa que esta clase se aplica a pantallas grandes (large), es decir, aquellas con un ancho mayor o igual a 992 píxeles.
+- **`5`**: Es el tamaño del gutter, que en este caso es un multiplicador de la unidad de espacio base de Bootstrap. Bootstrap utiliza un sistema de espaciamiento con pasos de 0.25rem, por lo que `5` se multiplica por 0.25rem, dando un gutter de 1.25rem.
+
+7. **`text-lg-start`**  Es para indicar si el texto tiene que estar al comienzo, medio o al final 
+
+
+En resumen, `g-lg-5` establece un espacio de 1.25rem entre las columnas de un contenedor de rejilla en pantallas grandes y superiores. Este espacio entre las columnas ayuda a separar visualmente los elementos y a mejorar la legibilidad y el diseño en pantallas de tamaño grande.
